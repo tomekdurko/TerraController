@@ -37,4 +37,9 @@ public class Terra {
      {
 
      }
+     public Terra(double temperature, double humdity)
+     {
+         this.humdity = humdity;
+         this.temperature = temperature;
+     }
 }

@@ -5,6 +5,7 @@ import com.tomek.terra.repository.TerraRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -20,7 +21,7 @@ public class TerraService {
     {
         return terraRepository.save(input);
     }
-
+    public List<Terra> getAllMeasurment() { return terraRepository.findAll(); }
     public Optional<Terra> getMeasurement(Long id)
     {
         return terraRepository.findById(id);
